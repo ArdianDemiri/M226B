@@ -5,8 +5,8 @@ namespace autovermietung
 {
     public class Location : Business
     {
-        protected List<Staff> _staffs = new List<Staff>();
-        protected string _location;
+        private List<Staff> _staffs = new List<Staff>();
+        private string _location;
 
         public Location(string Name, string Website, List<Staff> Staffs, string Location)
             : base(Name, Website)

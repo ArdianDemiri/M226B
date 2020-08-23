@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace autovermietung
 {
     public class Client
     {
+        protected List<Rental> _rentals = new List<Rental>();
         protected int _clientID;
         protected string _name;
         protected string _surname;

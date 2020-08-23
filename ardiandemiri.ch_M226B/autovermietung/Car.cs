@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace autovermietung
 {
     public class Car
@@ -8,6 +10,7 @@ namespace autovermietung
         protected string _model;
         protected string _licensePlate;
 
+        protected List<Rental> _rentals = new List<Rental>();
 
         public Car(int ID, string Brand, string Model, string LicensePlate)
         {
