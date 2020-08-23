@@ -40,6 +40,7 @@
     <Compile Include="Location.cs" />
     <Compile Include="Staff.cs" />
     <Compile Include="PrivateClient.cs" />
+    <Compile Include="BusinessClient.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
