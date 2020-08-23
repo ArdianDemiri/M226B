@@ -3,10 +3,10 @@ namespace autovermietung
 {
     public class Car
     {
-        private int _carId;
-        private string _brand;
-        private string _model;
-        private string _licensePlate;
+        protected int _carId;
+        protected string _brand;
+        protected string _model;
+        protected string _licensePlate;
 
 
         public Car(int ID, string Brand, string Model, string LicensePlate)

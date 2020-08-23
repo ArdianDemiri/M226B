@@ -3,15 +3,15 @@ namespace autovermietung
 {
     public class Client
     {
-        private int _clientID;
-        private string _name;
-        private string _surname;
-        private string _phoneNumber;
+        protected int _clientID;
+        protected string _name;
+        protected string _surname;
+        protected string _phoneNumber;
 
-        private string _street;
-        private string _city;
-        private string _zipCode;
-        private string _country;
+        protected string _street;
+        protected string _city;
+        protected string _zipCode;
+        protected string _country;
 
         public Client(int ID, string Name, string Surname, string PhoneNumber,
             string Street, string City, string ZipCode, string Country)
