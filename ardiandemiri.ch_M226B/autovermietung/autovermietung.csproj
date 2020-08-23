@@ -39,6 +39,7 @@
     <Compile Include="PKW.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Staff.cs" />
+    <Compile Include="PrivateClient.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

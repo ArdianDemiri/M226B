@@ -10,11 +10,11 @@ namespace autovermietung
 
         protected string _street;
         protected string _city;
-        protected string _zipCode;
+        protected int _zipCode;
         protected string _country;
 
         public Client(int ID, string Name, string Surname, string PhoneNumber,
-            string Street, string City, string ZipCode, string Country)
+            string Street, string City, int ZipCode, string Country)
         {
             _clientID = ID;
             _name = Name;
