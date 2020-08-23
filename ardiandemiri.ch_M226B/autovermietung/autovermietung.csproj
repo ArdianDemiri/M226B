@@ -36,6 +36,7 @@
     <Compile Include="Business.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="LKW.cs" />
+    <Compile Include="PKW.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

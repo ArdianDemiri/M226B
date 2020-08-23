@@ -25,5 +25,7 @@ namespace autovermietung
             _zipCode = ZipCode;
             _country = Country;
         }
+
+        public Client() { }
     }
 }
