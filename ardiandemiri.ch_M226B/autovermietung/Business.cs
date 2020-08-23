@@ -3,8 +3,8 @@ namespace autovermietung
 {
     public class Business
     {
-        private string _businessName;
-        private string _website;
+        protected string _businessName;
+        protected string _website;
 
         public Business(string Name, string Website)
         {
