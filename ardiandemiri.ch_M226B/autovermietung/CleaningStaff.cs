@@ -3,7 +3,7 @@ namespace autovermietung
 {
     public class CleaningStaff : Staff
     {
-        protected int _cleaningID;
+        private int _cleaningID;
 
         public CleaningStaff(int CleaningID, int ID, Location location,
             string Name, string Surname, string PhoneNumber)

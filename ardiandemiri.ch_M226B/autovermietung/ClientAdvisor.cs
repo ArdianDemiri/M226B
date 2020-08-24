@@ -5,7 +5,7 @@ namespace autovermietung
 {
     public class ClientAdvisor : Staff
     {
-        protected List<Client> _clients = new List<Client>();
+        private List<Client> _clients = new List<Client>();
 
         public ClientAdvisor(List<Client> clients, int ID, Location location,
             string Name, string Surname, string PhoneNumber)

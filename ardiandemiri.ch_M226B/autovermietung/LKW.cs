@@ -3,7 +3,7 @@ namespace autovermietung
 {
     public class LKW : Car
     {
-        protected string _lkwType;
+        private string _lkwType;
 
         public LKW(int ID, string Brand, string Model, string LicensePlate, string LKWType)
             : base(ID, Brand, Model, LicensePlate)

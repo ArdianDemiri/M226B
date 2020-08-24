@@ -3,7 +3,7 @@ namespace autovermietung
 {
     public class MechanicStaff : Staff
     {
-        protected int _mechanicID;
+        private int _mechanicID;
 
         public MechanicStaff(int MechanicID, int ID, Location location,
             string Name, string Surname, string PhoneNumber)

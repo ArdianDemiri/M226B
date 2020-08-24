@@ -3,7 +3,7 @@ namespace autovermietung
 {
     public class PKW : Car
     {
-        protected int _countSeats;
+        private int _countSeats;
 
         public PKW(int CountSeats, int ID, string Brand, string Model, string LicensePlate)
             : base(ID, Brand, Model, LicensePlate)

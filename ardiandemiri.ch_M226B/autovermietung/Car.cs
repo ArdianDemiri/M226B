@@ -5,6 +5,7 @@ namespace autovermietung
 {
     public class Car
     {
+        //guid
         protected int _carId;
         protected string _brand;
         protected string _model;

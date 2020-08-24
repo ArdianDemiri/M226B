@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autovermietung", "autovermietung\autovermietung.csproj", "{58FC1C4F-0929-441B-B46D-E1876C8D0B86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "streams", "streams\streams.csproj", "{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -13,5 +15,9 @@ Global
 		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Debug|anycpu.Build.0 = Debug|anycpu
 		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Release|anycpu.ActiveCfg = Release|anycpu
 		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Release|anycpu.Build.0 = Release|anycpu
+		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Debug|anycpu.Build.0 = Debug|anycpu
+		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Release|anycpu.ActiveCfg = Release|anycpu
+		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

@@ -3,7 +3,7 @@ namespace autovermietung
 {
     public class BusinessClient : Client
     {
-        protected string _businessName;
+        private string _businessName;
 
         public BusinessClient(int ID, string Name, string Surname, string PhoneNumber,
             string Street, string City, int ZipCode, string Country, string BusinessName)
