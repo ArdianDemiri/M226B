@@ -16,5 +16,18 @@ namespace autovermietung
         }
 
         public PKW() { }
+
+        //_countSeats
+        public int CountSeats
+        {
+            get { return _countSeats; }
+            set
+            {
+                if (CountSeats >= 0)
+                {
+                    _countSeats = CountSeats;
+                }
+            }
+        }
     }
 }

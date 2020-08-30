@@ -21,5 +21,18 @@ namespace autovermietung
         }
 
         public PrivateClient() { }
+
+        //_randomText
+        public string RandomText
+        {
+            get { return _randomText; }
+            set
+            {
+                if (RandomText != null)
+                {
+                    _randomText = RandomText;
+                }
+            }
+        }
     }
 }

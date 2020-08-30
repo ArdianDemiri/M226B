@@ -20,5 +20,19 @@ namespace autovermietung
         }
 
         public ClientAdvisor() { }
+
+        //_clients
+        public List<Client> Clients
+        {
+            get { return _clients; }
+            set
+            {
+                if (Clients != null)
+                {
+                    _clients = Clients;
+                }
+            }
+        }
+
     }
 }

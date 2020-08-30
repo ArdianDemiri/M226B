@@ -20,5 +20,71 @@ namespace autovermietung
         }
 
         public Rental() { }
+
+        //_client
+        public Client Client_P
+        {
+            get { return _client; }
+            set
+            {
+                if (Client_P != null)
+                {
+                    _client = Client_P;
+                }
+            }
+        }
+
+
+        //_location
+        public Location Location_P
+        {
+            get { return _location; }
+            set
+            {
+                if (Location_P != null)
+                {
+                    _location = Location_P;
+                }
+            }
+        }
+
+        //_car
+        public Car Car_P
+        {
+            get { return _car; }
+            set
+            {
+                if (Car_P != null)
+                {
+                    _car = Car_P;
+                }
+            }
+        }
+
+        //_startDate
+        public DateTime StarDate
+        {
+            get { return _startdate; }
+            set
+            {
+                if (StarDate != null)
+                {
+                    _startdate = StarDate;
+                }
+            }
+        }
+
+        //_endDate
+        public DateTime EndDate
+        {
+            get { return _endDate; }
+            set
+            {
+                if (EndDate != null)
+                {
+                    _endDate = EndDate;
+                }
+            }
+        }
     }
 }

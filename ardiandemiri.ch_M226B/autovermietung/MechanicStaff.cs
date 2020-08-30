@@ -18,5 +18,18 @@ namespace autovermietung
         }
 
         public MechanicStaff() { }
+
+        //_phoneNumber
+        public int MechanicID
+        {
+            get { return _mechanicID; }
+            set
+            {
+                if (MechanicID >= 0)
+                {
+                    _mechanicID = MechanicID;
+                }
+            }
+        }
     }
 }

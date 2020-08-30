@@ -14,5 +14,18 @@ namespace autovermietung
             _licensePlate = LicensePlate;
             _lkwType = LKWType;
         }
+
+        //_lkwType
+        public string LKWTpye
+        {
+            get { return _lkwType; }
+            set
+            {
+                if (LKWTpye != null)
+                {
+                    _lkwType = LKWTpye;
+                }
+            }
+        }
     }
 }

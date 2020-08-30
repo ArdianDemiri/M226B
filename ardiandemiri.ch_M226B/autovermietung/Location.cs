@@ -18,5 +18,31 @@ namespace autovermietung
         }
 
         public Location() { }
+
+        //_staffs
+        public List<Staff> Staffs
+        {
+            get { return _staffs; }
+            set
+            {
+                if (Staffs != null)
+                {
+                    _staffs = Staffs;
+                }
+            }
+        }
+
+        //_location
+        public string Location_P
+        {
+            get { return _location; }
+            set
+            {
+                if (Location_P != null)
+                {
+                    _location = Location_P;
+                }
+            }
+        }
     }
 }
