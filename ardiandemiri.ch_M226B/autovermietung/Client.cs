@@ -31,5 +31,109 @@ namespace autovermietung
         }
 
         public Client() { }
+
+        //_clientID
+        public int ClientID
+        {
+            get { return _clientID; }
+            set
+            {
+                if (ClientID >= 0)
+                {
+                    _clientID = ClientID;
+                }
+            }
+        }
+
+        //_name
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                if (Name != null)
+                {
+                    _name = Name;
+                }
+            }
+        }
+
+        //_surname
+        public string Surname
+        {
+            get { return _surname; }
+            set
+            {
+                if (Surname != null)
+                {
+                    _surname = Surname;
+                }
+            }
+        }
+
+        //_phoneNumber
+        public string PhoneNumber
+        {
+            get { return _phoneNumber; }
+            set
+            {
+                if (PhoneNumber != null)
+                {
+                    _phoneNumber = PhoneNumber;
+                }
+            }
+        }
+
+        //_street
+        public string Street
+        {
+            get { return _street; }
+            set
+            {
+                if (Street != null)
+                {
+                    _street = Street;
+                }
+            }
+        }
+
+        //_city
+        public string City
+        {
+            get { return _city; }
+            set
+            {
+                if (City != null)
+                {
+                    _city = City;
+                }
+            }
+        }
+
+        //_zipCode
+        public int ZipCode
+        {
+            get { return _zipCode; }
+            set
+            {
+                if (ZipCode >= 0)
+                {
+                    _zipCode = ZipCode;
+                }
+            }
+        }
+
+        //_phoneNumber
+        public string Country
+        {
+            get { return _country; }
+            set
+            {
+                if (Country != null)
+                {
+                    _country = Country;
+                }
+            }
+        }
     }
 }

@@ -18,5 +18,18 @@ namespace autovermietung
         }
 
         public CleaningStaff() { }
+
+        //_cleaningID
+        public int CleaningID
+        {
+            get { return _cleaningID; }
+            set
+            {
+                if (CleaningID >= 0)
+                {
+                    _cleaningID = CleaningID;
+                }
+            }
+        }
     }
 }

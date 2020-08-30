@@ -21,5 +21,18 @@ namespace autovermietung
         }
 
         public BusinessClient() { }
+
+        //_businessName
+        public string BusinessName
+        {
+            get { return _businessName; }
+            set
+            {
+                if (BusinessName != null)
+                {
+                    _businessName = BusinessName;
+                }
+            }
+        }
     }
 }

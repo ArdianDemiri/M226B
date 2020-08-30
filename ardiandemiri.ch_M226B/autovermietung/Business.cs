@@ -12,6 +12,32 @@ namespace autovermietung
             _website = Website;
         }
 
+        //_businessName
         public Business() { }
+
+        public string BusinessName
+        {
+            get { return _businessName; }
+            set
+            {
+                if(BusinessName != null)
+                {
+                    _businessName = BusinessName;
+                }
+            }
+        }
+
+        //_website
+        public string Website
+        {
+            get { return _website; }
+            set
+            {
+                if (Website != null)
+                {
+                    _website = Website;
+                }
+            }
+        }
     }
 }
