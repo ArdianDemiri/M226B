@@ -12,9 +12,9 @@ namespace streams
         public static void Main(string[] args)
         {
             // define path and file name
-            string fileName = @"j:\Daten\byteArray.bin";
+            string fileName = @"/Users/ardiandemiri/Desktop/byteArray3.text";
             // define and initialize arrays
-            byte[] byteArrayWrite = { 200, 201, 202, 203, 204, 205, 206, 207 };
+            byte[] byteArrayWrite = { 1, 2, 3, 4, 5, 6, 7 };
             byte[] byteArrayRead = new byte[byteArrayWrite.Length];
             //create file stream
             FileStream fs = new FileStream(fileName, FileMode.Create);
@@ -30,10 +30,23 @@ namespace streams
             {
                 Console.Write(byteArrayRead[count] + ", ");
             }
-            // close filestream
             fs.Close();
-            // delete file
-            File.Delete(fileName);
+
+            string fileName2 = @"/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/autovermietung/byteArray2.bin";
+            byte[] byteArrayContent = { 8, 9, 10, 11, 12, 13 };
+            byte[] byteArrayLength = new byte[byteArrayContent.Length];
+            FileStream fs2 = new FileStream(fileName2, FileMode.Create);
+            fs2.Write(byteArrayContent, 0, byteArrayContent.Length);
+
+            for (int count2 = 1; count2 < byteArrayLength.Length; count2++)
+            {
+                Console.Write(byteArrayLength[count2] + ", ");
+            }
+
+            fs2.Close();
+            File.Delete(fileName2);
+            // close filestream
+            
         }
     }
 }
