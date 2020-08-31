@@ -7,12 +7,12 @@ namespace autovermietung
     {
         private List<Client> _clients = new List<Client>();
 
-        public ClientAdvisor(List<Client> clients, int ID, Location location,
+        public ClientAdvisor(List<Client> clients, Guid ID, Location location,
             string Name, string Surname, string PhoneNumber)
             : base(ID, location, Name, Surname, PhoneNumber)
         {
             _clients = clients;
-            _clientID = ID;
+            _staffID = ID;
             _location = location;
             _name = Name;
             _surname = Surname;

@@ -7,7 +7,7 @@ namespace autovermietung
     {
         protected List<Rental> _rentals = new List<Rental>();
 
-        protected int _clientID;
+        protected Guid _clientID;
         protected string _name;
         protected string _surname;
         protected string _phoneNumber;
@@ -17,7 +17,7 @@ namespace autovermietung
         protected int _zipCode;
         protected string _country;
 
-        public Client(int ID, string Name, string Surname, string PhoneNumber,
+        public Client(Guid ID, string Name, string Surname, string PhoneNumber,
             string Street, string City, int ZipCode, string Country)
         {
             _clientID = ID;
@@ -33,12 +33,12 @@ namespace autovermietung
         public Client() { }
 
         //_clientID
-        public int ClientID
+        public Guid ClientID
         {
             get { return _clientID; }
             set
             {
-                if (ClientID >= 0)
+                if (ClientID != null)
                 {
                     _clientID = ClientID;
                 }

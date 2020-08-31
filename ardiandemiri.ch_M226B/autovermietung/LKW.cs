@@ -5,7 +5,7 @@ namespace autovermietung
     {
         private string _lkwType;
 
-        public LKW(int ID, string Brand, string Model, string LicensePlate, string LKWType)
+        public LKW(Guid ID, string Brand, string Model, string LicensePlate, string LKWType)
             : base(ID, Brand, Model, LicensePlate)
         {
             _carId = ID;

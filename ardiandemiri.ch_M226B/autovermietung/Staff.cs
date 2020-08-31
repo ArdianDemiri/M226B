@@ -3,15 +3,15 @@ namespace autovermietung
 {
     public class Staff
     {
-        protected int _clientID;
+        protected Guid _staffID;
         protected Location _location;
         protected string _name;
         protected string _surname;
         protected string _phoneNumber;
 
-        public Staff(int ID, Location location, string Name, string Surname, string PhoneNumber)
+        public Staff(Guid ID, Location location, string Name, string Surname, string PhoneNumber)
         {
-            _clientID = ID;
+            _staffID = ID;
             _location = location;
             _name = Name;
             _surname = Surname;
@@ -21,14 +21,14 @@ namespace autovermietung
         public Staff() { }
 
         //_clientID
-        public int ClientID
+        public Guid ClientID
         {
-            get { return _clientID; }
+            get { return _staffID; }
             set
             {
-                if (ClientID >= 0)
+                if (ClientID != null)
                 {
-                    _clientID = ClientID;
+                    _staffID = ClientID;
                 }
             }
         }

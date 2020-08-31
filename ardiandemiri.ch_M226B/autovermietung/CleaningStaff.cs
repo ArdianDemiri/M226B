@@ -3,14 +3,14 @@ namespace autovermietung
 {
     public class CleaningStaff : Staff
     {
-        private int _cleaningID;
+        private string _random;
 
-        public CleaningStaff(int CleaningID, int ID, Location location,
+        public CleaningStaff(string RandomString, Guid ID, Location location,
             string Name, string Surname, string PhoneNumber)
             : base(ID, location, Name, Surname, PhoneNumber)
         {
-            _cleaningID = CleaningID;
-            _clientID = ID;
+            _random = RandomString;
+            _staffID = ID;
             _location = location;
             _name = Name;
             _surname = Surname;
@@ -20,14 +20,14 @@ namespace autovermietung
         public CleaningStaff() { }
 
         //_cleaningID
-        public int CleaningID
+        public string RandomString
         {
-            get { return _cleaningID; }
+            get { return _random; }
             set
             {
-                if (CleaningID >= 0)
+                if (RandomString != null)
                 {
-                    _cleaningID = CleaningID;
+                    _random = RandomString;
                 }
             }
         }

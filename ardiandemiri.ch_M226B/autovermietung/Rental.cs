@@ -3,15 +3,17 @@ namespace autovermietung
 {
     public class Rental
     {
+        private Guid _rentalID;
         private Client _client;
         private Location _location;
         private Car _car;
         private DateTime _startdate;
         private DateTime _endDate;
 
-        public Rental(Client client, Location location, Car car,
+        public Rental(Guid RentalID, Client client, Location location, Car car,
             DateTime StartDate, DateTime EndDate)
         {
+            _rentalID = RentalID;
             _client = client;
             _location = location;
             _car = car;
@@ -20,6 +22,19 @@ namespace autovermietung
         }
 
         public Rental() { }
+
+        //_guid
+        public Guid RentalID
+        {
+            get { return _rentalID; }
+            set
+            {
+                if (RentalID != null)
+                {
+                    _rentalID = RentalID;
+                }
+            }
+        }
 
         //_client
         public Client Client_P

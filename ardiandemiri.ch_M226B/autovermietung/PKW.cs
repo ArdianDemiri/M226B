@@ -5,7 +5,7 @@ namespace autovermietung
     {
         private int _countSeats;
 
-        public PKW(int CountSeats, int ID, string Brand, string Model, string LicensePlate)
+        public PKW(int CountSeats, Guid ID, string Brand, string Model, string LicensePlate)
             : base(ID, Brand, Model, LicensePlate)
         {
             _carId = ID;

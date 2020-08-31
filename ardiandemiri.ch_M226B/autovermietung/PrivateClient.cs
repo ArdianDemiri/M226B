@@ -5,7 +5,7 @@ namespace autovermietung
     {
         protected string _randomText;
 
-        public PrivateClient(int ID, string Name, string Surname, string PhoneNumber,
+        public PrivateClient(Guid ID, string Name, string Surname, string PhoneNumber,
             string Street, string City, int ZipCode, string Country, string RandomText)
             : base(ID, Name, Surname, PhoneNumber, Street, City, ZipCode, Country)
         {

@@ -3,14 +3,13 @@ namespace autovermietung
 {
     public class MechanicStaff : Staff
     {
-        private int _mechanicID;
+        private string _random;
 
-        public MechanicStaff(int MechanicID, int ID, Location location,
+        public MechanicStaff(string Random, Guid ID, Location location,
             string Name, string Surname, string PhoneNumber)
             : base(ID, location, Name, Surname, PhoneNumber)
         {
-            _mechanicID = MechanicID;
-            _clientID = ID;
+            _staffID = ID;
             _location = location;
             _name = Name;
             _surname = Surname;
@@ -20,14 +19,14 @@ namespace autovermietung
         public MechanicStaff() { }
 
         //_phoneNumber
-        public int MechanicID
+        public string Random
         {
-            get { return _mechanicID; }
+            get { return _random; }
             set
             {
-                if (MechanicID >= 0)
+                if (Random != null)
                 {
-                    _mechanicID = MechanicID;
+                    _random = Random;
                 }
             }
         }

@@ -5,7 +5,7 @@ namespace autovermietung
     {
         private string _businessName;
 
-        public BusinessClient(int ID, string Name, string Surname, string PhoneNumber,
+        public BusinessClient(Guid ID, string Name, string Surname, string PhoneNumber,
             string Street, string City, int ZipCode, string Country, string BusinessName)
             : base(ID, Name, Surname, PhoneNumber, Street, City, ZipCode, Country)
         {
