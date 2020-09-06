@@ -1,8 +1,10 @@
 ﻿using System;
 namespace autovermietung
 {
+    [Serializable]
     public class PKW : Car
     {
+        
         private int _countSeats;
 
         public PKW(int CountSeats, Guid ID, string Brand, string Model, string LicensePlate)

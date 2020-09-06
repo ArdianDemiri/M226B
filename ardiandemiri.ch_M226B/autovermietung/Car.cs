@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace autovermietung
 {
@@ -11,7 +12,7 @@ namespace autovermietung
         protected string _brand;
         protected string _model;
         protected string _licensePlate;
-
+        [NonSerialized]
         protected List<Rental> _rentals = new List<Rental>();
 
         public Car(Guid ID, string Brand, string Model, string LicensePlate)

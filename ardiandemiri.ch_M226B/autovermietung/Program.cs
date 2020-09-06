@@ -8,12 +8,12 @@ namespace autovermietung
 {
     class MainClass
     {
-        static string fileName = "cars.bin";
+        static string fileName = "carsFile.bin";
         public static void Main(string[] args)
         {
             List<Car> cars = new List<Car>();
-            cars.Add(new Car(Guid.NewGuid(), "Mercedes", "S-KLASS", "ZH-8910"));
-            cars.Add(new Car(Guid.NewGuid(), "Audi", "RS6", "ZH-98234"));
+            cars.Add(new PKW(5, Guid.NewGuid(), "Mercedes", "CLS", "ZH-9879"));
+            cars.Add(new PKW(5, Guid.NewGuid(), "AUDI", "RS6", "ZH-934879"));
 
             Console.WriteLine("New Cars:\n");
             foreach(Car car in cars)
@@ -31,7 +31,8 @@ namespace autovermietung
             Console.WriteLine("Old Cars:\n");
 
             List<Car> cars2 = (List<Car>)bf.Deserialize(fs);
-            foreach(Car car2 in cars2)
+
+            foreach (Car car2 in cars2)
             {
                 Console.WriteLine("Brand: {0}\nModel: {1}\n\n", car2.Model, car2.Brand);
             }
