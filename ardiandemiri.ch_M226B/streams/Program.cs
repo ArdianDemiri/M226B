@@ -4,49 +4,69 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace streams
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        static string fileName = "clientfile.bin";
+
+        static void Main(string[] args)
         {
-            // define path and file name
-            string fileName = @"/Users/ardiandemiri/Desktop/byteArray3.text";
-            // define and initialize arrays
-            byte[] byteArrayWrite = { 1, 2, 3, 4, 5, 6, 7 };
-            byte[] byteArrayRead = new byte[byteArrayWrite.Length];
-            //create file stream
-            FileStream fs = new FileStream(fileName, FileMode.Create);
-            // write array to file
-            fs.Write(byteArrayWrite, 0, byteArrayWrite.Length); // array name,
-                                                                // start index,
-                                                                // length of array
-                                                                //read from file
-            fs.Position = 0; // set start position
-            fs.Read(byteArrayRead, 0, byteArrayRead.Length); // read file values
-                                                             // output: values of byte array
-            for (int count = 0; count < byteArrayRead.Length; count++)
+            List<Client> list1 = new List<Client>();
+            list1.Add(new Client(1, "Joe", "Hanson", 1.234, 6300));
+            list1.Add(new Client(2, "Tina", "Turner", 4.5, 8300));
+            Console.WriteLine("Safed Client;\n");
+            foreach (Client count in list1)
             {
-                Console.Write(byteArrayRead[count] + ", ");
+                count.printClient();
+                Console.WriteLine();
+            }
+            FileStream fs = new FileStream(fileName, FileMode.Create);
+            IFormatter bf = new BinaryFormatter();
+            // Writes a list of objects to a binary file
+            bf.Serialize(fs, list1);
+            fs.Position = 0;
+            Console.WriteLine("\n\nReconstructed Clients:\n");
+            // Reads a list of objects from a binary file
+            List<Client> recList = (List<Client>)bf.Deserialize(fs);
+            foreach (Client count in recList)
+            {
+                count.printClient();
+                Console.WriteLine();
             }
             fs.Close();
 
-            string fileName2 = @"/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/autovermietung/byteArray2.bin";
-            byte[] byteArrayContent = { 8, 9, 10, 11, 12, 13 };
-            byte[] byteArrayLength = new byte[byteArrayContent.Length];
-            FileStream fs2 = new FileStream(fileName2, FileMode.Create);
-            fs2.Write(byteArrayContent, 0, byteArrayContent.Length);
+        }
+    }
 
-            for (int count2 = 1; count2 < byteArrayLength.Length; count2++)
-            {
-                Console.Write(byteArrayLength[count2] + ", ");
-            }
-
-            fs2.Close();
-            File.Delete(fileName2);
-            // close filestream
-            
+    [Serializable]
+    class Client
+    {
+        private int clientNumber;
+        private string firstName;
+        private string surName;
+        private double factor;
+        [NonSerialized]
+        int regionNumber;
+        public Client(int pClientNumber, string pFirstName, string pSurName,
+        double pFactor, int pRegionNumber)
+        {
+            clientNumber = pClientNumber;
+            firstName = pFirstName;
+            surName = pSurName;
+            factor = pFactor;
+            regionNumber = pRegionNumber;
+        }
+        public void printClient()
+        {
+            Console.WriteLine("Client number: " + clientNumber);
+            Console.WriteLine("First Name: " + firstName);
+            Console.WriteLine("Surname: " + surName);
+            Console.WriteLine("Factor: " + factor);
+            Console.WriteLine("Region number: " + regionNumber);
         }
     }
 }

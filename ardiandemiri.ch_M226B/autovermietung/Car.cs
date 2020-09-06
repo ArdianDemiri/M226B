@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace autovermietung
 {
+    [Serializable]
     public class Car
     {
         //guid
