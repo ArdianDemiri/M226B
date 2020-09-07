@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace autovermietung
 {
@@ -11,6 +13,13 @@ namespace autovermietung
         static string fileName = "carsFile.bin";
         public static void Main(string[] args)
         {
+
+            string jsonString;
+            jsonString = JsonSerializer.Serialize(weatherForecast);
+
+
+            #region
+            /*
             List<Car> cars = new List<Car>();
             cars.Add(new PKW(5, Guid.NewGuid(), "Mercedes", "CLS", "ZH-9879"));
             cars.Add(new PKW(5, Guid.NewGuid(), "AUDI", "RS6", "ZH-934879"));
@@ -38,6 +47,8 @@ namespace autovermietung
             }
 
             fs.Close();
+            */
+            #endregion
         }
 
     }
