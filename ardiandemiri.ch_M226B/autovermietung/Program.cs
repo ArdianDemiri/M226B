@@ -26,7 +26,7 @@ namespace autovermietung
             FileStream fs = new FileStream(fileName, FileMode.Create);
             IFormatter bf = new BinaryFormatter();
 
-            bf.Serialize(fs, fileName);
+            bf.Serialize(fs, cars);
             fs.Position = 0;
             Console.WriteLine("Old Cars:\n");
 
