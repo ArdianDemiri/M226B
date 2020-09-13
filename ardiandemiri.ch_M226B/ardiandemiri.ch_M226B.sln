@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serializat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize2", "Serialize2\Serialize2.csproj", "{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize3", "Serialize3\Serialize3.csproj", "{7D3378DD-35FB-4953-953A-C4F6A1F46336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -31,5 +33,9 @@ Global
 		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Debug|anycpu.Build.0 = Debug|anycpu
 		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Release|anycpu.ActiveCfg = Release|anycpu
 		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Release|anycpu.Build.0 = Release|anycpu
+		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Debug|anycpu.Build.0 = Debug|anycpu
+		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Release|anycpu.ActiveCfg = Release|anycpu
+		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

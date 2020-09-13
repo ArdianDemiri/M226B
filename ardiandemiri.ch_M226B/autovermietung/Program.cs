@@ -119,7 +119,6 @@ namespace autovermietung
             jsonSerializer.Serialize(jsonWriter, data);
             jsonWriter.Close();
             sw.Close();
-
         }
 
         public Object JsonDesirialize(Type dataType, string filePath)
