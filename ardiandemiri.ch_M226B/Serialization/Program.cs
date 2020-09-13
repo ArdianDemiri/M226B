@@ -3,6 +3,11 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml.Serialization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Serialization
 {
@@ -86,6 +91,17 @@ namespace Serialization
             return obj;
         }
 
+        public void JSonSerialize(object data, string filePath)
+        {
+            JSonSerializer jSonSerialize = new JSonSerializer();
+        }
+
+        public Object JsonDesirialize(string filePath)
+        {
+            object obj = null;
+
+            return obj;
+        }
     } 
 
     [Serializable]
