@@ -1,22 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Text;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace autovermietung
 {
     class MainClass
     {
+        
         public static void Main(string[] args)
         {
+            string filePath = "cars.save";
+            PKW pkw1 = new PKW(5, Guid.NewGuid(), "Mercedes", "CL500", "ZH90223");
+            PKW pkw2 = new PKW();
+            DataSerializer dataSerializer = new DataSerializer();
+            dataSerializer.JSonSerializing(pkw1, filePath);
+            pkw2 = dataSerializer.JsonDesirialize(typeof(PKW), filePath) as PKW;
 
+            Console.WriteLine("Seats: {0}\nID: {1}\nBrand: {2}\nModel: {3}\nPlate Number: {4}\n",
+                pkw2.CountSeats, pkw2.CarID, pkw2.Brand, pkw2.Model, pkw2.LicensePlate);
             #region
             /*
             List<Car> cars = new List<Car>();
