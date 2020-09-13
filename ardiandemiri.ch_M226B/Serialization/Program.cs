@@ -15,6 +15,39 @@ namespace Serialization
     {
         public static void Main(string[] args)
         {
+            #region
+            /*
+            Person person = new Person();
+            person.FirstNameGET = "Ardian";
+            person.LastNameGET = "Demiri";
+
+            string filePath = "data.save";
+
+            DataSerializer dataSerializer = new DataSerializer();
+
+            Person person2 = new Person();
+
+            //dataSerializer.BinarySerialize(person, filePath);
+
+            //person2 = dataSerializer.BinaryDeserialize(filePath) as Person;
+
+            //dataSerializer.XmlSerialize(typeof(Person), person, filePath);
+
+            //person2 = dataSerializer.XmlDeserialize(typeof(Person), filePath) as Person
+
+            dataSerializer.JSonSerializing(person, filePath);
+
+            person2 = dataSerializer.JsonDesirialize(typeof(Person), filePath) as Person;
+
+            Console.WriteLine(person2.FirstNameGET);
+            Console.WriteLine(person2.LastNameGET);
+
+            Console.WriteLine("My name is {0} {1}", person2.FirstNameGET, person2.LastNameGET);
+            */
+            #endregion
+
+            #region
+            /*
             Person person = new Person();
             person.FirstName = "Ardian";
             person.LastName = "Demiri";
@@ -41,6 +74,8 @@ namespace Serialization
             Console.WriteLine(person2.LastName);
 
             Console.WriteLine("My name is {0} {1}", person2.FirstName, person2.LastName);
+            */
+            #endregion
 
         }
     }
@@ -129,5 +164,23 @@ namespace Serialization
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        #region
+        /*
+        private string FirstName;
+        private string LastName;
+        public string FirstNameGET
+        {
+            get { return FirstName; }
+            set { FirstName = FirstNameGET; }
+        }
+
+        public string LastNameGET
+        {
+            get { return LastName; }
+            set { LastName = LastNameGET; }
+        }
+        */
+        #endregion
     }
 }
