@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autovermietung", "autovermi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "streams", "streams\streams.csproj", "{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{385EC6D6-A728-4C07-9C9A-3F622161EDAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize2", "Serialize2\Serialize2.csproj", "{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -19,5 +23,13 @@ Global
 		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Debug|anycpu.Build.0 = Debug|anycpu
 		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Release|anycpu.ActiveCfg = Release|anycpu
 		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Release|anycpu.Build.0 = Release|anycpu
+		{385EC6D6-A728-4C07-9C9A-3F622161EDAA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{385EC6D6-A728-4C07-9C9A-3F622161EDAA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{385EC6D6-A728-4C07-9C9A-3F622161EDAA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{385EC6D6-A728-4C07-9C9A-3F622161EDAA}.Release|anycpu.Build.0 = Release|anycpu
+		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{49DE7A6F-F7D5-4401-8E78-DA7D846B1F9A}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
