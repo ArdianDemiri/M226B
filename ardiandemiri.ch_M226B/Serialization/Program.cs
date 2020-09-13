@@ -2,6 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Serialization
 {
@@ -19,9 +20,14 @@ namespace Serialization
 
             Person person2 = new Person();
 
-            dataSerializer.BinarySerialize(person, filePath);
+            //dataSerializer.BinarySerialize(person, filePath);
 
-            person2 = dataSerializer.BinaryDeserialize(filePath) as Person;
+            //person2 = dataSerializer.BinaryDeserialize(filePath) as Person;
+
+            dataSerializer.XmlSerialize(typeof(Person), person, filePath);
+
+            person2 = dataSerializer.XmlDeserialize(typeof(Person), filePath) as Person;
+
 
             Console.WriteLine(person2.FirstName);
             Console.WriteLine(person2.LastName);
@@ -57,6 +63,29 @@ namespace Serialization
             }
             return obj;
         }
+
+        public void XmlSerialize(Type datatype, object data, string filePath)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(datatype);
+            if (File.Exists(filePath)) File.Delete(filePath);
+            TextWriter writer = new StreamWriter(filePath);
+            xmlSerializer.Serialize(writer, data);
+            writer.Close();
+        }
+
+        public object XmlDeserialize(Type dataType, string filePath)
+        {
+            object obj = null;
+            XmlSerializer xmlSerializier = new XmlSerializer(dataType);
+            if (File.Exists(filePath))
+            {
+                TextReader textReader = new StreamReader(filePath);
+                obj = xmlSerializier.Deserialize(textReader);
+                textReader.Close();
+            }
+            return obj;
+        }
+
     } 
 
     [Serializable]
