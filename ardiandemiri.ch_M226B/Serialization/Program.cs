@@ -29,15 +29,18 @@ namespace Serialization
 
             //person2 = dataSerializer.BinaryDeserialize(filePath) as Person;
 
-            dataSerializer.XmlSerialize(typeof(Person), person, filePath);
+            //dataSerializer.XmlSerialize(typeof(Person), person, filePath);
 
-            person2 = dataSerializer.XmlDeserialize(typeof(Person), filePath) as Person;
+            //person2 = dataSerializer.XmlDeserialize(typeof(Person), filePath) as Person
 
+            dataSerializer.JSonSerializing(person, filePath);
+
+            person2 = dataSerializer.JsonDesirialize(typeof(Person), filePath) as Person;
 
             Console.WriteLine(person2.FirstName);
             Console.WriteLine(person2.LastName);
 
-
+            Console.WriteLine("My name is {0} {1}", person2.FirstName, person2.LastName);
 
         }
     }
@@ -91,16 +94,33 @@ namespace Serialization
             return obj;
         }
 
-        public void JSonSerialize(object data, string filePath)
+        public void JSonSerializing(object data, string filePath)
         {
-            JSonSerializer jSonSerialize = new JSonSerializer();
+            JsonSerializer jsonSerializer = new JsonSerializer();
+            if (File.Exists(filePath)) File.Delete(filePath);
+            StreamWriter sw = new StreamWriter(filePath);
+            JsonWriter jsonWriter = new JsonTextWriter(sw);
+
+            jsonSerializer.Serialize(jsonWriter, data);
+            jsonWriter.Close();
+            sw.Close();
+
         }
 
-        public Object JsonDesirialize(string filePath)
+        public Object JsonDesirialize(Type dataType, string filePath)
         {
-            object obj = null;
+            JObject obj = null;
+            JsonSerializer jsonSerializer = new JsonSerializer();
+            if(File.Exists(filePath))
+            {
+                StreamReader sr = new StreamReader(filePath);
+                JsonReader jsonReader = new JsonTextReader(sr);
+                obj = jsonSerializer.Deserialize(jsonReader) as JObject;
+                jsonReader.Close();
+                sr.Close();
+            }
 
-            return obj;
+            return obj.ToObject(dataType);
         }
     } 
 
