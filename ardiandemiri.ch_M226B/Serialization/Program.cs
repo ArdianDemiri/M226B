@@ -16,7 +16,7 @@ namespace Serialization
         public static void Main(string[] args)
         {
             #region
-            /*
+            
             Person person = new Person();
             person.FirstNameGET = "Ardian";
             person.LastNameGET = "Demiri";
@@ -43,7 +43,7 @@ namespace Serialization
             Console.WriteLine(person2.LastNameGET);
 
             Console.WriteLine("My name is {0} {1}", person2.FirstNameGET, person2.LastNameGET);
-            */
+            
             #endregion
 
             #region
@@ -162,25 +162,25 @@ namespace Serialization
     [Serializable]
     public class Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        //public string FirstName { get; set; }
+        //public string LastName { get; set; }
 
         #region
-        /*
+        
         private string FirstName;
         private string LastName;
         public string FirstNameGET
         {
             get { return FirstName; }
-            set { FirstName = FirstNameGET; }
+            set { FirstName = value; }
         }
 
         public string LastNameGET
         {
             get { return LastName; }
-            set { LastName = LastNameGET; }
+            set { LastName = value; }
         }
-        */
+        
         #endregion
     }
 }
