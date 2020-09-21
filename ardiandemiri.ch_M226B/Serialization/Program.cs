@@ -175,6 +175,7 @@ namespace Serialization
             set { FirstName = value; }
         }
 
+
         public string LastNameGET
         {
             get { return LastName; }
