@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
+using autovermietung.Interface;
 
 namespace autovermietung
 {
     [Serializable]
-    public class Car
+    public class Car : ITestInterface
     {
         //guid
         protected Guid _carId;
@@ -74,6 +75,16 @@ namespace autovermietung
                     _licensePlate = LicensePlate;
                 }
             }
+        }
+
+        // Kurzschreibform für { }
+        int ITestInterface.ID => throw new NotImplementedException();
+
+        string ITestInterface.Name => throw new NotImplementedException();
+
+        public void RentCar()
+        {
+            throw new NotImplementedException();
         }
     }
 }

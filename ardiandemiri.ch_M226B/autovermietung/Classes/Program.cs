@@ -56,6 +56,10 @@ namespace autovermietung
             fs.Close();
             */
             #endregion
+
+            // Inherited Interfaced
+            PKW pkw = new PKW(3, new Guid(), "mercedes", "3241", "ZH52345");
+            pkw.RentCar();
         }
 
     }

@@ -8,6 +8,6 @@ namespace autovermietung.Interface
         int ID { get; }
         string Name { get; }
 
-
+        void RentCar();
     }
 }
