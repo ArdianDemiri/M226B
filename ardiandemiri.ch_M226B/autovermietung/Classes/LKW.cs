@@ -23,7 +23,7 @@ namespace autovermietung
             {
                 if (LKWTpye != null)
                 {
-                    _lkwType = LKWTpye;
+                    _lkwType = value;
                 }
             }
         }

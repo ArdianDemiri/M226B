@@ -33,7 +33,7 @@ namespace autovermietung
             {
                 if (CarID != null)
                 {
-                    _carId = CarID;
+                    _carId = value;
                 }
             }
         }
@@ -46,7 +46,7 @@ namespace autovermietung
             {
                 if (Brand != null)
                 {
-                    _brand = Brand;
+                    _brand = value;
                 }
             }
         }
@@ -59,7 +59,7 @@ namespace autovermietung
             {
                 if (Model != null)
                 {
-                    _model = Model;
+                    _model = value;
                 }
             }
         }
@@ -72,7 +72,7 @@ namespace autovermietung
             {
                 if (LicensePlate != null)
                 {
-                    _licensePlate = LicensePlate;
+                    _licensePlate = value;
                 }
             }
         }

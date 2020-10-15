@@ -22,7 +22,7 @@ namespace autovermietung
             {
                 if(BusinessName != null)
                 {
-                    _businessName = BusinessName;
+                    _businessName = value;
                 }
             }
         }
@@ -35,7 +35,7 @@ namespace autovermietung
             {
                 if (Website != null)
                 {
-                    _website = Website;
+                    _website = value;
                 }
             }
         }

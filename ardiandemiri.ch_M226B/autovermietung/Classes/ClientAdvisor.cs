@@ -29,7 +29,7 @@ namespace autovermietung
             {
                 if (Clients != null)
                 {
-                    _clients = Clients;
+                    _clients = value;
                 }
             }
         }

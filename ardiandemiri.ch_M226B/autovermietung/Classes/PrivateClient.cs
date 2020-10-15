@@ -30,7 +30,7 @@ namespace autovermietung
             {
                 if (RandomText != null)
                 {
-                    _randomText = RandomText;
+                    _randomText = value;
                 }
             }
         }

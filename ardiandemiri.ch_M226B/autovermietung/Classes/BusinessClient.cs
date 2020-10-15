@@ -30,7 +30,7 @@ namespace autovermietung
             {
                 if (BusinessName != null)
                 {
-                    _businessName = BusinessName;
+                    _businessName = value;
                 }
             }
         }

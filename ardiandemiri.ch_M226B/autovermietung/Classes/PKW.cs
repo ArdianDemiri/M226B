@@ -27,7 +27,7 @@ namespace autovermietung
             {
                 if (CountSeats >= 0)
                 {
-                    _countSeats = CountSeats;
+                    _countSeats = value;
                 }
             }
         }

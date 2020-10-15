@@ -40,7 +40,7 @@ namespace autovermietung
             {
                 if (ClientID != null)
                 {
-                    _clientID = ClientID;
+                    _clientID = value;
                 }
             }
         }
@@ -53,7 +53,7 @@ namespace autovermietung
             {
                 if (Name != null)
                 {
-                    _name = Name;
+                    _name = value;
                 }
             }
         }
@@ -66,7 +66,7 @@ namespace autovermietung
             {
                 if (Surname != null)
                 {
-                    _surname = Surname;
+                    _surname = value;
                 }
             }
         }
@@ -79,7 +79,7 @@ namespace autovermietung
             {
                 if (PhoneNumber != null)
                 {
-                    _phoneNumber = PhoneNumber;
+                    _phoneNumber = value;
                 }
             }
         }
@@ -92,7 +92,7 @@ namespace autovermietung
             {
                 if (Street != null)
                 {
-                    _street = Street;
+                    _street = value;
                 }
             }
         }
@@ -105,7 +105,7 @@ namespace autovermietung
             {
                 if (City != null)
                 {
-                    _city = City;
+                    _city = value;
                 }
             }
         }
@@ -118,7 +118,7 @@ namespace autovermietung
             {
                 if (ZipCode >= 0)
                 {
-                    _zipCode = ZipCode;
+                    _zipCode = value;
                 }
             }
         }
@@ -131,7 +131,7 @@ namespace autovermietung
             {
                 if (Country != null)
                 {
-                    _country = Country;
+                    _country = value;
                 }
             }
         }

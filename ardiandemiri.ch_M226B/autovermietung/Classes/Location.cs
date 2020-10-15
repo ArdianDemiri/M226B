@@ -27,7 +27,7 @@ namespace autovermietung
             {
                 if (Staffs != null)
                 {
-                    _staffs = Staffs;
+                    _staffs = value;
                 }
             }
         }
@@ -40,7 +40,7 @@ namespace autovermietung
             {
                 if (Location_P != null)
                 {
-                    _location = Location_P;
+                    _location = value;
                 }
             }
         }

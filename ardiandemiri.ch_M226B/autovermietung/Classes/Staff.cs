@@ -28,7 +28,7 @@ namespace autovermietung
             {
                 if (ClientID != null)
                 {
-                    _staffID = ClientID;
+                    _staffID = value;
                 }
             }
         }
@@ -41,7 +41,7 @@ namespace autovermietung
             {
                 if (Location_P != null)
                 {
-                    _location = Location_P;
+                    _location = value;
                 }
             }
         }
@@ -54,7 +54,7 @@ namespace autovermietung
             {
                 if (Name != null)
                 {
-                    _name =Name;
+                    _name = value;
                 }
             }
         }
@@ -67,7 +67,7 @@ namespace autovermietung
             {
                 if (Surname != null)
                 {
-                    _surname = Surname;
+                    _surname = value;
                 }
             }
         }
@@ -80,7 +80,7 @@ namespace autovermietung
             {
                 if (PhoneNumber != null)
                 {
-                    _phoneNumber = PhoneNumber;
+                    _phoneNumber = value;
                 }
             }
         }

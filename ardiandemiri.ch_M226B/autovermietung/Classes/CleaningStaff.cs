@@ -27,7 +27,7 @@ namespace autovermietung
             {
                 if (RandomString != null)
                 {
-                    _random = RandomString;
+                    _random = value;
                 }
             }
         }

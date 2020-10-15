@@ -31,7 +31,7 @@ namespace autovermietung
             {
                 if (RentalID != null)
                 {
-                    _rentalID = RentalID;
+                    _rentalID = value;
                 }
             }
         }
@@ -44,7 +44,7 @@ namespace autovermietung
             {
                 if (Client_P != null)
                 {
-                    _client = Client_P;
+                    _client = value;
                 }
             }
         }
@@ -58,7 +58,7 @@ namespace autovermietung
             {
                 if (Location_P != null)
                 {
-                    _location = Location_P;
+                    _location = value;
                 }
             }
         }
@@ -71,7 +71,7 @@ namespace autovermietung
             {
                 if (Car_P != null)
                 {
-                    _car = Car_P;
+                    _car = value;
                 }
             }
         }
@@ -84,7 +84,7 @@ namespace autovermietung
             {
                 if (StarDate != null)
                 {
-                    _startdate = StarDate;
+                    _startdate = value;
                 }
             }
         }
@@ -97,7 +97,7 @@ namespace autovermietung
             {
                 if (EndDate != null)
                 {
-                    _endDate = EndDate;
+                    _endDate = value;
                 }
             }
         }
