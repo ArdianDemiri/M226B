@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize2", "Serialize2\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize3", "Serialize3\Serialize3.csproj", "{7D3378DD-35FB-4953-953A-C4F6A1F46336}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_AbstractClass", "Interface_AbstractClass\Interface_AbstractClass.csproj", "{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -37,5 +39,9 @@ Global
 		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Debug|anycpu.Build.0 = Debug|anycpu
 		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Release|anycpu.ActiveCfg = Release|anycpu
 		{7D3378DD-35FB-4953-953A-C4F6A1F46336}.Release|anycpu.Build.0 = Release|anycpu
+		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
