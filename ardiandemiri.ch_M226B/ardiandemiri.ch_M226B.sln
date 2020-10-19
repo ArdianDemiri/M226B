@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize3", "Serialize3\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_AbstractClass", "Interface_AbstractClass\Interface_AbstractClass.csproj", "{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autovermietung_project_NoUI", "autovermietung_project_NoUI\autovermietung_project_NoUI.csproj", "{7A58081E-257D-4406-A345-B3C85D5EE25F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -43,5 +45,9 @@ Global
 		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Debug|anycpu.Build.0 = Debug|anycpu
 		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Release|anycpu.ActiveCfg = Release|anycpu
 		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Release|anycpu.Build.0 = Release|anycpu
+		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
