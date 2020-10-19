@@ -2,6 +2,7 @@
 
 namespace Interface_AbstractClass
 {
+    // Ein Interface wird nicht geerbt sondern implementiert !!!
     class MainClass
     {
         //Just for testing reasons
