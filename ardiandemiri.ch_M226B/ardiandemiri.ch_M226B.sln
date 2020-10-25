@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_AbstractClass", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autovermietung_project_NoUI", "autovermietung_project_NoUI\autovermietung_project_NoUI.csproj", "{7A58081E-257D-4406-A345-B3C85D5EE25F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental_CocoaTesting", "CarRental_CocoaTesting\CarRental_CocoaTesting.csproj", "{312A2F68-7A8F-4308-937E-85B78BDC0BD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -49,5 +51,9 @@ Global
 		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Debug|anycpu.Build.0 = Debug|anycpu
 		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Release|anycpu.ActiveCfg = Release|anycpu
 		{7A58081E-257D-4406-A345-B3C85D5EE25F}.Release|anycpu.Build.0 = Release|anycpu
+		{312A2F68-7A8F-4308-937E-85B78BDC0BD6}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{312A2F68-7A8F-4308-937E-85B78BDC0BD6}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{312A2F68-7A8F-4308-937E-85B78BDC0BD6}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{312A2F68-7A8F-4308-937E-85B78BDC0BD6}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
