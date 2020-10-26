@@ -16,6 +16,7 @@ namespace autovermietung
         
         public static void Main(string[] args)
         {
+            /*
             string filePath = "cars.save";
             PKW pkw1 = new PKW(5, Guid.NewGuid(), "Mercedes", "CL500", "ZH90223");
             PKW pkw2 = new PKW();
@@ -54,12 +55,31 @@ namespace autovermietung
             }
 
             fs.Close();
-            */
-            #endregion
+            
 
             // Inherited Interfaced
             PKW pkw = new PKW(3, new Guid(), "mercedes", "3241", "ZH52345");
             pkw.RentCar();
+            #endregion
+            */
+
+            Console.WriteLine("\n");
+            int testingZero = 0;
+            int testt;
+            try
+            {
+                testt = 5 / testingZero;
+            } catch(DivideByZeroException e)
+            {
+                testingZero++;
+                testt = 5 / testingZero;
+                Console.WriteLine(testt);
+            }
+            finally
+            {
+                Console.WriteLine("finally");
+            }
+
         }
 
     }
