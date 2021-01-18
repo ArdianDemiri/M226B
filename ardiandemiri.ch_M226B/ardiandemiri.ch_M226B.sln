@@ -1,8 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autovermietung", "autovermietung\autovermietung.csproj", "{58FC1C4F-0929-441B-B46D-E1876C8D0B86}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "streams", "streams\streams.csproj", "{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{385EC6D6-A728-4C07-9C9A-3F622161EDAA}"
@@ -13,9 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize3", "Serialize3\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_AbstractClass", "Interface_AbstractClass\Interface_AbstractClass.csproj", "{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rental_Project_Console", "Rental_Project_Console\Rental_Project_Console.csproj", "{21828BB8-B17F-4456-9C92-73A49294DD12}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website_Rental_Project", "..\..\Website_Rental_Project\Website_Rental_Project.csproj", "{66BE5549-7E82-4FB4-BF65-9B116A66B112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M226B_Rental_Proj", "..\..\..\Desktop\M226B_Rental_Proj\M226B_Rental_Proj.csproj", "{8C798FEF-01EC-4E00-B50C-6E00B6A2B53C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +19,6 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Debug|anycpu.Build.0 = Debug|anycpu
-		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Release|anycpu.ActiveCfg = Release|anycpu
-		{58FC1C4F-0929-441B-B46D-E1876C8D0B86}.Release|anycpu.Build.0 = Release|anycpu
 		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Debug|anycpu.ActiveCfg = Debug|anycpu
 		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Debug|anycpu.Build.0 = Debug|anycpu
 		{AB62B743-A2D4-4201-B9AF-DA864B5D53D5}.Release|anycpu.ActiveCfg = Release|anycpu
@@ -47,13 +39,9 @@ Global
 		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Debug|anycpu.Build.0 = Debug|anycpu
 		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Release|anycpu.ActiveCfg = Release|anycpu
 		{0D4C5C7F-1086-4B56-915B-4720CFAA71DA}.Release|anycpu.Build.0 = Release|anycpu
-		{21828BB8-B17F-4456-9C92-73A49294DD12}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{21828BB8-B17F-4456-9C92-73A49294DD12}.Debug|anycpu.Build.0 = Debug|anycpu
-		{21828BB8-B17F-4456-9C92-73A49294DD12}.Release|anycpu.ActiveCfg = Release|anycpu
-		{21828BB8-B17F-4456-9C92-73A49294DD12}.Release|anycpu.Build.0 = Release|anycpu
-		{66BE5549-7E82-4FB4-BF65-9B116A66B112}.Debug|anycpu.ActiveCfg = Debug|Any CPU
-		{66BE5549-7E82-4FB4-BF65-9B116A66B112}.Debug|anycpu.Build.0 = Debug|Any CPU
-		{66BE5549-7E82-4FB4-BF65-9B116A66B112}.Release|anycpu.ActiveCfg = Release|Any CPU
-		{66BE5549-7E82-4FB4-BF65-9B116A66B112}.Release|anycpu.Build.0 = Release|Any CPU
+		{8C798FEF-01EC-4E00-B50C-6E00B6A2B53C}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{8C798FEF-01EC-4E00-B50C-6E00B6A2B53C}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{8C798FEF-01EC-4E00-B50C-6E00B6A2B53C}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{8C798FEF-01EC-4E00-B50C-6E00B6A2B53C}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
