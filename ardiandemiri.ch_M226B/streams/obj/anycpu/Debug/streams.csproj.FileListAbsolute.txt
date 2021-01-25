@@ -1,0 +1,6 @@
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/streams/bin/Debug/streams.exe
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/streams/bin/Debug/streams.pdb
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/streams/obj/anycpu/Debug/streams.csprojAssemblyReference.cache
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/streams/obj/anycpu/Debug/streams.csproj.CoreCompileInputs.cache
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/streams/obj/anycpu/Debug/streams.exe
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/streams/obj/anycpu/Debug/streams.pdb

@@ -1,0 +1,5 @@
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Serialize2/bin/Debug/Serialize2.exe
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Serialize2/bin/Debug/Serialize2.pdb
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Serialize2/obj/anycpu/Debug/Serialize2.csproj.CoreCompileInputs.cache
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Serialize2/obj/anycpu/Debug/Serialize2.exe
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Serialize2/obj/anycpu/Debug/Serialize2.pdb

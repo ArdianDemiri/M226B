@@ -1,0 +1,6 @@
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Interface_AbstractClass/obj/anycpu/Debug/Interface_AbstractClass.csprojAssemblyReference.cache
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Interface_AbstractClass/obj/anycpu/Debug/Interface_AbstractClass.csproj.CoreCompileInputs.cache
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Interface_AbstractClass/bin/Debug/Interface_AbstractClass.exe
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Interface_AbstractClass/bin/Debug/Interface_AbstractClass.pdb
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Interface_AbstractClass/obj/anycpu/Debug/Interface_AbstractClass.exe
+/Users/ardiandemiri/Projects/M226B/ardiandemiri.ch_M226B/Interface_AbstractClass/obj/anycpu/Debug/Interface_AbstractClass.pdb
